@@ -8,3 +8,11 @@ Inductive Bool :=
 
   | true
   | false.
+
+
+
+(* Check the 'Bool' data type. *)
+
+Check Bool.
+Check true.
+Check false.

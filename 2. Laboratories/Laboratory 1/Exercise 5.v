@@ -16,8 +16,10 @@ Inductive Bool :=
 Definition negation (value : Bool) : Bool :=
 
   match value with
+
   | false => true
   | _ => false
+
   end.
 
 
@@ -27,18 +29,23 @@ Definition negation (value : Bool) : Bool :=
 Definition conjunction (firstValue secondValue : Bool) : Bool :=
 
   match firstValue, secondValue with
+
   | true, true => true
   | _, _ => false
+
   end.
 
 
 
-(* Define the 'disjunction' data type. *)
+(* Define the 'disjunction' function. *)
 
 Definition disjunction (firstValue secondValue : Bool) : Bool :=
+
   match firstValue, secondValue with
+
   | false, false => false
   | _, _ => true
+
   end.
 
 
@@ -50,7 +57,7 @@ Compute negation true.
 
 
 
-(* Test the 'conjunction' data type. *)
+(* Test the 'conjunction' function. *)
 
 Compute conjunction false false.
 Compute conjunction false true.
@@ -59,7 +66,7 @@ Compute conjunction true true.
 
 
 
-(* Test the 'disjunction' data type. *)
+(* Test the 'disjunction' function. *)
 
 Compute disjunction false false.
 Compute disjunction false true.

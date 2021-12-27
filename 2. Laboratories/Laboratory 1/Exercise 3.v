@@ -21,6 +21,7 @@ Inductive Day :=
 Definition nextDay (currentDay : Day) : Day :=
 
   match currentDay with
+
     | Monday => Tuesday
     | Tuesday => Wednesday
     | Wednesday => Thursday
@@ -28,6 +29,7 @@ Definition nextDay (currentDay : Day) : Day :=
     | Friday => Saturday
     | Saturday => Sunday
     | Sunday => Monday
+
   end.
 
 

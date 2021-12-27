@@ -21,6 +21,7 @@ Inductive Day :=
 Definition equality (firstDay secondDay : Day) : bool :=
 
   match firstDay, secondDay with
+
     | Monday, Monday => true
     | Tuesday, Tuesday => true
     | Wednesday, Wednesday => true

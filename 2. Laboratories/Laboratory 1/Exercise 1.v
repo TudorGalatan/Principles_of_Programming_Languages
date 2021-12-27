@@ -13,3 +13,16 @@ Inductive Day :=
   | Friday
   | Saturday
   | Sunday.
+
+
+
+(* Check the 'Day' data type. *)
+
+Check Day.
+Check Monday.
+Check Tuesday.
+Check Wednesday.
+Check Thursday.
+Check Friday.
+Check Saturday.
+Check Sunday.
